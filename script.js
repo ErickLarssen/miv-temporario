@@ -46,3 +46,41 @@ for (let i = 0; i < paletaItem.length; i++){
 
 modalCloseBtn.addEventListener("click", paletaModalFunc);
 overlay.addEventListener("click", paletaModalFunc);
+// Variáveis de seleção personalizadas
+const select = document.querySelector("[data-select]");
+const selectItens = document.querySelectorAll("[data-select-item]");
+const selectValor = document.querySelector("[data-select-valor]");
+
+// Alternância da caixa de seleção
+select.addEventListener("click", function() {
+  elementoToggleFunc(this);
+});
+
+// Adicionar evento a todos os itens do select
+for (let i = 0; i < selectItens.length; i++) {
+  selectItens[i].addEventListener("click", function () {
+
+    let selectedValor = this.innerText.toLowerCase();
+    selectValor.innerText = this.innerText;
+
+    elementoToggleFunc(select);
+    filtroFunc(selectedValor);
+  });
+}
+
+// Variáveis de filtro
+const filtrosItens = document.querySelectorAll("[data-filter-item]");
+
+// Função de filtragem
+const filtroFunc = function(selectedValor) {
+  for (let i = 0; i < filtrosItens.length; i++) {
+
+    const categoria = filtrosItens[i].dataset.category.toLowerCase();
+
+    if (selectedValor === "todos" || selectedValor === categoria) {
+      filtrosItens[i].classList.add("active");
+    } else {
+      filtrosItens[i].classList.remove("active");
+    }
+  }
+};
