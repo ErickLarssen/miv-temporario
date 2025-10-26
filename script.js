@@ -84,3 +84,25 @@ const filtroFunc = function(selectedValor) {
     }
   }
 };
+
+// Variáveis de navegação de página
+const navegacaoLinks = document.querySelectorAll("[data-nav-link]");
+const paginas = document.querySelectorAll("[data-page]");
+
+// Adicionar evento a todos os links de navegação
+for (let i = 0; i < navegacaoLinks.length; i++){
+  navegacaoLinks[i].addEventListener("click", function () {
+    
+    for (let i = 0; i < paginas.length; i++){
+    
+      if (this.innerHTML.toLowerCase() === paginas[i].dataset.page){
+        paginas[i].classList.add("active");
+        navegacaoLinks[i].classList.add("active");
+        window.scrollTo(0, 0);
+      }else{
+        paginas[i].classList.remove("active");
+        navegacaoLinks[i].classList.remove("active");
+      }
+    }
+  });
+}

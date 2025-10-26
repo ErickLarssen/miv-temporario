@@ -138,7 +138,7 @@
             <ul class="barra-navegacao-lista">
 
               <li class="barra-navegacao-item">
-                <button class="barra-navegacao-link  active" data-nav-link>Inspiração</button>
+                <button class="barra-navegacao-link  active" data-nav-link>Sobre</button>
               </li>
 
               <li class="barra-navegacao-item">
@@ -146,7 +146,7 @@
               </li>
 
               <li class="barra-navegacao-item">
-                <button class="barra-navegacao-link" data-nav-link>Aplicações</button>
+                <button class="barra-navegacao-link" data-nav-link>Mockups</button>
               </li>
 
               <li class="barra-navegacao-item">
@@ -163,7 +163,7 @@
 
           <!-- SOBRE - Inspiração, Área de Atuação -->
           
-          <article class="inspiracao" data-page="inspiracao">
+          <article class="inspiracao active" data-page="sobre">
             
             <header>
               <h2 class="h2 article-titulo">Inspiração</h2>
@@ -554,9 +554,9 @@
           
           <!-- Fim do DETALHES - Paleta de Cores, Variações, Margem de Segurança, Redução Máxima, Tons de Cinza, Versões Monocromáticas, Usos Incorretos e Tipografia -->
           
-          <!-- Aplicações (Mockups) -->
+          <!-- APLICAÇÕES (Mockups) -->
           
-          <article class="aplicacoes active" data-page="aplicacoes">
+          <article class="aplicacoes" data-page="mockups">
             
             <h2 class="h2 article-titulo">Aplicações</h2>
             
@@ -876,9 +876,95 @@
             
           </article>
           
-          <!-- Fim do Aplicações (Mockups) -->
+          <!-- Fim do APLICAÇÕES (Mockups) -->
+          
+          <!-- ASSINATURA -->
+          
+          <article class="assinatura" data-page="assinatura">
+            
+            <header>
+              <h2 class="h2 article-titulo">Assinatura da Marca</h2>
+            </header>
+            
+            <section class="assinatura-marca">
+              
+              <div class="assinatura-caixa">
+                <p class="assinatura-texto">
+                  A <strong>Elarssen Code Solutions</strong> representa mais do que uma identidade visual, é a materialização da lógica, da estética e da experiência digital em perfeita harmonia.
+                </p>
+                
+                <p class="assinatura-texto">
+                  Cada linha de código, cada interação e cada componente visual foram cuidadosamente pensados
+              para traduzir eficiência, modernidade e propósito. Este Manual de Identidade Visual
+              serve como um guia para preservar a coerência visual e a essência tecnológica da marca.
+                </p>
+                
+                <p class="assinatura-texto enfase">
+                  Que cada interface, cada site e cada projeto desenvolvido sob este nome carregue o mesmo ideal que o
+              originou:
+              <strong>transformar design em código e ideias em soluções.</strong>
+                </p>
+                
+                <div class="assinatura-image-box">
+                  <img src="./assets/images/elarssen-code-solutions-logo.jpg" width="660px" alt="Assinatura da Marca" loading="lazy">
+                </div>
 
-        </div>
+                <p class="assinatura-nome">Elarssen Design</p>
+                <p class="assinatura-ano">© 2025 — Todos os direitos reservados</p>
+                
+              </div>
+              
+            </section>
+            
+          </article>
+          
+          <!-- Fim do ASSINATURA -->
+          
+          <!-- CONTATO -->
+          
+          <article class="contato" data-page="contato">
+            
+            <header>
+              <h2 class="h2 article-titulo">Contato</h2>
+            </header>
+            
+            <section class="mapbox" data-maapbox>
+              <figure>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.910245672154!2d-46.62348712385127!3d-23.681531166570773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce44c1b8b2d5b5%3A0x6f3a1e76ab8452df!2sDiadema%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1734479473733!5m2!1spt-BR!2sbr"
+                    width="400" height="300" loading="lazy" style="border:0;" allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </figure>
+            </section>
+            
+            <section class="contato-form">
+
+              <h3 class="h3 form-titulo">Formulário de Contato</h3>
+    
+              <form action="https://formspree.io/f/mzzbnayp" method="POST" class="form" data-form>
+                <div class="input-wrapper">
+                  <input type="text" name="fullname" class="form-input" placeholder="Seu nome completo" required
+                    data-form-input>
+    
+                  <input type="email" name="email" class="form-input" placeholder="Seu e-mail" required data-form-input>
+                </div>
+    
+                <textarea name="message" class="form-input" placeholder="Sua mensagem" required data-form-input></textarea>
+    
+                <button class="form-btn" type="submit" data-form-btn>
+                  <ion-icon name="paper-plane"></ion-icon>
+                  <span>Enviar mensagem</span>
+                </button>
+              </form>
+
+            </section>
+            
+          </article>
+          
+          <!-- Fim do CONTATO -->
+
+        </form>
       </main>
     <!-- FIM DA MAIN -->
     <!-- ARQUIVO JAVASCRIPT -->
