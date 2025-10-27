@@ -58,6 +58,7 @@
 }
 
 /* RESET BÁSICO */
+
 *, *::before, *::after{
     margin: 0;
     padding: 0;
@@ -1372,3 +1373,616 @@ textarea.form-input::-webkit-resizer{
 /* --------------------------------- */
         /*  Fim do CONTATO */
 /* --------------------------------- */
+
+/* --------------------------------- */
+        /*  RESPONSIVIDADE */
+/* --------------------------------- */
+
+/* Tela responsiva maior que 450px */
+
+@media (min-width: 450px){
+  
+  /* variacoes */
+  .variacoes-item{
+    min-width: calc(33.33% - 10px);
+  }
+  
+    /* MOCKUPS */
+    .mockups-img{
+      height: auto;
+    }
+}
+
+/* Tela responsiva maior que 580px */
+
+@media (min-width: 580px){
+  
+  /* PROPRIEDADES PERSONALIZADAS */
+  
+  :root{
+  /* Tipografia */
+    --fs-1: 32px;
+    --fs-2: 24px;
+    --fs-3: 26px;
+    --fs-4: 18px;
+    --fs-6: 15px;
+    --fs-7: 15px;
+    --fs-8: 12px;
+  }
+  
+  /* ESTILOS REUTILIZÁVEIS */
+  
+  .barra-lateral, article{
+    width: 520px;
+    margin-inline: auto;
+    padding: 30px;
+  }
+  
+  .article-titulo{
+    font-weight: var(--fw-600);
+    padding-bottom: 15px;
+  }
+  
+  .article-titulo::after{
+    width: 40px;
+    height: 5px;
+  }
+  
+  .icon-box{
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    font-size: 18px;
+  }
+  
+  /* MAIN */
+  
+  main{
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+  
+  /* BARRA LATERAL */
+  
+  .barra-lateral{
+    max-height: 180px;
+    margin-bottom: 30px;
+  }
+  
+  .barra-lateral.active{
+    max-height: 584px;
+  }
+  
+  .barra-lateral-info{
+    gap: 25px;
+  }
+  
+  .logo-box{
+    border-radius: 30px;
+  }
+  
+  .logo-box img{
+    width: 120px;
+  }
+  
+  .info-conteudo .nome{
+    margin-bottom: 15px;
+  }
+  
+  .info-conteudo .titulo{
+    padding: 5px 18px;
+  }
+  
+  .info-more-btn{
+    top: -30px;
+    right: -30px;
+    padding: 10px 15px;
+  }
+  
+  .info-more-btn span{
+    display: block;
+    font-size: var(--fs-8);
+  }
+  
+  .info-more-btn ion-icon{
+    display: none;
+  }
+  
+  .separador{
+    margin: 32px 0;
+  }
+  
+  .listas-contatos{
+    gap: 20px;
+  }
+  
+  .contato-info{
+    max-width: calc(100% - 64px);
+    width: calc(100% - 64px);
+  }
+  
+  /* BARRA DE NAVEGAÇÃO */
+  
+  .barra-navegacao{
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .barra-navegacao-lista{
+    gap: 20px;
+  }
+  
+  .barra-navegacao-link{
+    --fs-8: 14px;
+  }
+  
+  /* SOBRE - Inspiração, Área de Atuação */
+  
+  .inspiracao .article-titulo{
+    margin-bottom: 20px;
+  }
+  
+  .inspiracao-texto{
+    margin-bottom: 40px;
+  }
+  
+  /* Serviços (Áreas de Atuação) */
+  .servicos-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 30px;
+  }
+  
+  .servicos-icon-box{
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+  
+  .servicos-content-box{
+    text-align: left;
+  }
+  
+  /* DETALHES - Paleta de Cores, Variações, Margem de Segurança, Redução Máxima, Tons de Cinza, Versões Monocromáticas, Usos Incorretos e Tipografia */
+  
+  /* Paleta de Cores */
+  .paleta-titulo{
+    margin-bottom: 25px;
+  }
+  
+  .paleta-lista{
+    gap: 30px;
+    margin: 0 -30px;
+    padding: 30px;
+    padding-bottom: 35px;
+  }
+  
+  .conteudo-card{
+    padding: 30px;
+    padding-top: 25px;
+  }
+  
+  .paleta-image-box{
+    transform: translate(30px, -30px);
+    border-radius: 20px;
+  }
+  
+  .paleta-image-box img{
+    width: 80px;
+  }
+  
+  .paleta-item-titulo{
+    margin-bottom: 10px;
+    margin-left: 95px;
+  }
+  
+  .paleta-texto{
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+  }
+  
+  /* Modal Paleta de Cores */
+  .modal-container{
+    padding: 20px;
+  }
+  
+  .paleta-modal{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 25px;
+    padding: 30px;
+    border-radius: 30px;
+  }
+  
+  .modal-img-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .modal-image-box{
+    border-radius: 18px;
+    margin-bottom: 0;
+  }
+  
+  .modal-image-box img{
+    width: 65px;
+  }
+  
+  .modal-img-wrapper > img{
+    display: block;
+    flex-grow: 1;
+    width: 35px;
+  }
+  
+  /* Variações do Logo */
+  .variacoes-lista{
+    gap: 50px;
+    margin: 0 -30px;
+    padding: 45px;
+    scroll-padding-inline: 45px;
+  }
+  
+  .variacoes-item{
+    min-width: calc(33.33% - 35px);
+  }
+  
+  /* Margem de Segurança / Redução Máxima */
+  
+  /* Tons de Cinza */
+  
+  /* Usos Incorretos */
+  
+  /* Tipografia */
+  
+  /* APLICAÇÕES (Mockups) */
+  
+  .mockups-img{
+    border-radius: 16px;
+  }
+  
+  /* CONTATO */
+  
+  .mapbox{
+    height: 380px;
+    border-radius: 18px;
+  }
+  
+  .input-wrapper{
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .form-input{
+    padding: 15px 20px;
+  }
+  
+  textarea.form-input{
+    margin-bottom: 30px;
+  }
+  
+  .form-btn{
+    --fs-6: 16px;
+    padding: 16px 20px;
+  }
+  
+  .form-btn ion-icon{
+    font-size: 18px;
+  }
+  
+}
+
+/* Tela responsiva maior que 768px */
+
+@media (min-width: 768px){
+  
+  /* ESTILOS REUTILIZÁVEIS */
+  
+  .barra-lateral, article{
+    width: 700px;
+  }
+  
+  .has-scrollbar::-webkit-scrollbar-button{
+    width: 100px;
+  }
+  
+  /* BARRA LATERAL */
+  
+  .listas-contatos{
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 15px;
+  }
+  
+  /* BARRA DE NAVEGAÇÃO */
+  
+  .barra-navegacao-link{
+    --fs-8: 15px;
+  }
+  
+  /* DETALHES - Paleta de Cores, Variações, Margem de Segurança, Redução Máxima, Tons de Cinza, Versões Monocromáticas, Usos Incorretos e Tipografia */
+  
+  /* Modal Paleta de Cores */
+  .paleta-modal{
+    gap: 35px;
+    max-width: 680px;
+  }
+  
+  .modal-image-box{
+    width: 80px;
+  }
+ 
+  /* Margem de Segurança / Redução Máxima */
+  
+  /* Tons de Cinza */
+  
+  /* Usos Incorretos */
+  
+  /* Tipografia */
+  
+  /* APLICAÇÕES (Mockups) */
+  
+  .mockups-titulo{
+    padding-bottom: 20px;
+  }
+  
+  .filter-select-box{
+    display: none;
+  }
+  
+  .filtro-lista{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    padding-left: 5px;
+    margin-bottom: 30px;
+  }
+  
+  .filtro-item button{
+    color: var(--cinza-claro);
+    font-size: var(--fs-5);
+    transition: var(--transition-1);
+  }
+  
+  .filtro-item button:hover{
+    color: var(--cinza-claro-70);
+  }
+  
+  .filtro-item button.active{
+    color: var(--amarelo-alaranjado);
+  }
+  
+  /* Aplicações grid */
+  .mockups-lista{
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  /* CONTATO */
+  
+  .input-wrapper{
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .form-btn{
+    width: max-content;
+    margin-left: auto;
+  }
+  
+  .form-btn ion-icon{
+    font-size: 18px;
+  }
+  
+}
+
+/* Tela responsiva maior que 1024px */
+
+@media (min-width: 1024px){
+  
+  /* PROPRIEDADES PERSONALIZADAS */
+  
+  :root{
+    
+    /* Sombra */
+    --sombra-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
+    --sombra-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
+    --sombra-3: 0 16px 48px hsla(0, 0%, 0%, 0.125);
+    
+  }
+  
+  /* ESTILOS REUTILIZÁVEIS */
+  
+  .barra-lateral, article{
+    width: 950px;
+    box-shadow: var(--sombra-3);
+  }
+  
+  /* MAIN */
+  
+  main{
+    margin-bottom: 60px;
+  }
+  
+  .main-content{
+    position: relative;
+    width: max-content;
+    margin: auto;
+  }
+  
+  /* BARRA DE NAVEGAÇÃO */
+  
+  .barra-navegacao{
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    left: auto;
+    right: 0;
+    width: max-content;
+    border-radius: 0 20px;
+    padding: 0 20px;
+    box-sizing: none;
+  }
+  
+  .barra-navegacao-lista{
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .barra-navegacao-link{
+    font-weight: var(--fw-500);
+  }
+  
+  /* SOBRE - Inspiração, Área de Atuação */
+  
+  /* Serviços (Áreas de Atuação) */
+  .servicos-lista{
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 25px;
+  }
+  
+  /* DETALHES - Paleta de Cores, Variações, Margem de Segurança, Redução Máxima, Tons de Cinza, Versões Monocromáticas, Usos Incorretos e Tipografia */
+  
+  /* Paleta de Cores */
+  .paleta-item{
+    min-width: calc(50% - 15px);
+  }
+  
+  /* Variações do Logo */
+  .variacoes-item{
+    min-width: calc(25% - 38px);
+  }
+ 
+  /* Margem de Segurança / Redução Máxima */
+  
+  /* Tons de Cinza */
+  
+  /* Usos Incorretos */
+  
+  /* Tipografia */
+  
+  /* APLICAÇÕES (Mockups) */
+  
+  /* Aplicações grid */
+  .mockups-lista{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+}
+
+/* Tela responsiva maior que 1250px */
+
+@media (min-width: 1250px){
+  
+  /* RESET BÁSICO */
+  
+  body::-webkit-scrollbar{
+    width: 20px;
+  }
+  
+  body::-webkit-scrollbar-track{
+    background: var(--preto-esfumacado);
+  }
+  
+  body::-webkit-scrollbar-thumb{
+    border: 5px solid var(--preto-esfumacado);
+    background: hsla(0, 0%, 100%, 0.1);
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11), inset -1px, -1px, 0 hsla(0, 0%, 100%, 0.11);
+  }
+  
+  body::-webkit-scrollbar-thumb:hover{
+    background: hsla(0, 0%, 100%, 0.15);
+  }
+  
+  body::-webkit-scrollbar-button{
+    height: 60px;
+  }
+  
+  /* ESTILOS REUTILIZÁVEIS */
+  
+  .barra-lateral, article{
+    width: auto;
+  }
+  
+  article{
+    min-height: 100%;
+  }
+  
+  /* MAIN */
+  
+  main{
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+  }
+  
+  .main-content{
+    min-width: 75%;
+    width: 75%;
+    margin: 0;
+  }
+  
+  /* BARRA LATERAL */
+  .barra-lateral{
+    position: sticky;
+    top: 60px;
+    max-height: max-content;
+    height: 100%;
+    margin-bottom: 0;
+    padding-top: 60px;
+    z-index: 1;
+  }
+  
+  .barra-lateral-info{
+    flex-direction: column;
+  }
+  
+  .logo-box img{
+    width: 150px;
+  }
+  
+  .info-conteudo .nome{
+    white-space: nowrap;
+    text-align: center;
+  }
+  
+  .info-conteudo .titulo{
+    margin: auto;
+  }
+  
+  .info-more-btn{
+    display: none;
+  }
+  
+  .barra-lateral-info-more{
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .listas-contatos{
+    grid-template-columns: 1fr;
+  }
+  
+  .contato-info :is(.contato-link){
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .contato-info :is(.contato-link, time, address){
+    font-weight: var(--fw-300);
+  }
+  
+  .separador:last-of-type{
+    margin: 15px 0;
+    opacity: 0;
+  }
+  
+  .lista-social{
+    justify-content: center;
+  }
+  
+}

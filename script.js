@@ -50,6 +50,7 @@ overlay.addEventListener("click", paletaModalFunc);
 const select = document.querySelector("[data-select]");
 const selectItens = document.querySelectorAll("[data-select-item]");
 const selectValor = document.querySelector("[data-select-valor]");
+const filtroBtn = document.querySelectorAll("[data-filter-btn]");
 
 // Alternância da caixa de seleção
 select.addEventListener("click", function() {
@@ -84,6 +85,21 @@ const filtroFunc = function(selectedValor) {
     }
   }
 };
+
+// Adicionar evento em todos os itens do botão de filtro para tela grande
+let lastClickedBtn = filtroBtn[0];
+
+for (let i = 0; i < filtroBtn.length; i++){
+  filtroBtn[i].addEventListener("click", function(){
+    let selectedValor = this.innerText.toLowerCase();
+    selectValor.innerText = this.innerText;
+    filtroFunc(selectedValor);
+    
+    lastClickedBtn.classList.remove("active");
+    this.classList.add("active");
+    lastClickedBtn = this;
+  });
+}
 
 // Variáveis de navegação de página
 const navegacaoLinks = document.querySelectorAll("[data-nav-link]");
